@@ -1,0 +1,14 @@
+Difficultés rencontrées
+-----------------------
+
+Partir de Python 3.8.10 mon env était en 3.8.18
+    WARNING: pip is configured with locations that require TLS/SSL, however the ssl module in Python is not available.
+    $ conda create -n base38 python==3.8.10
+
+Probleme 
+    TypeError: expected str, bytes or os.PathLike object, not NoneType
+    Nécessite l'ajout de fichier vide __init__.py dans les repertoire python
+	
+Probleme chemin trop long
+    https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry#enable-long-paths-in-windows-10-version-1607-and-later
+    J'ai du activer le long path de windows 
