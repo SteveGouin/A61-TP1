@@ -68,5 +68,10 @@ Probleme
 			- j'ai désinstaller Flask et jinja2 puis réinstallé ce qui a réglé le probleme
 
 
+Partie 9 
+--------
+Objectif
+	- Ajout config, log et test a Flask api
+
 	
 
