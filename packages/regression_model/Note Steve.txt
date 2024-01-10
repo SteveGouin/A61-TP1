@@ -31,7 +31,19 @@ Objectif
 	- Ajouter les validation des données d'entrées
 	- Nouveau test avec prediction multiple
 
-Probleme
-	- aucun
+Partie 5
+--------
+Objectif 
+	- Ajout des feature engine au pipeline
+		- Log tranformer 
+	- On a isoler les feature engine dans son propre fichier
+
+Partie 6
+--------
+	- Ajout d'un module de log
+	- 
+Objectif
+	-  
+
 	
 
