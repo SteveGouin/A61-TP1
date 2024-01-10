@@ -1,14 +1,37 @@
 Difficultés rencontrées
 -----------------------
 
-Partir de Python 3.8.10 mon env était en 3.8.18
-    WARNING: pip is configured with locations that require TLS/SSL, however the ssl module in Python is not available.
-    $ conda create -n base38 python==3.8.10
+Execution TP: 
+	- Utiliser environement Base38
+	- Lancer une console anaconda
+	- se diriger dans le repertoire de travail
+		 D:\_Intelligence Artificielle\10 - 420-A61-Préparation solution IA mise en place\TP1\A61-TP1\packages\regression_model
+	- lancer tox
+
+Partie 3
+--------
+Objectif
+	- Ajout des prédictions
 
 Probleme 
-    TypeError: expected str, bytes or os.PathLike object, not NoneType
-    Nécessite l'ajout de fichier vide __init__.py dans les repertoire python
+	- WARNING: pip is configured with locations that require TLS/SSL, however the ssl module in Python is not available.
+		Partir de Python 3.8.10 mon env était en 3.8.18
+		$ conda create -n base38 python==3.8.10
+
+	- TypeError: expected str, bytes or os.PathLike object, not NoneType
+    		Nécessite l'ajout de fichier vide __init__.py dans les repertoire python
 	
-Probleme chemin trop long
-    https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry#enable-long-paths-in-windows-10-version-1607-and-later
-    J'ai du activer le long path de windows 
+	- Probleme chemin trop long
+	    https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry#enable-long-paths-in-windows-10-version-1607-and-later
+	    J'ai du activer le long path de windows 
+
+Partie 4
+--------
+Objectif
+	- Ajouter les validation des données d'entrées
+	- Nouveau test avec prediction multiple
+
+Probleme
+	- aucun
+	
+
