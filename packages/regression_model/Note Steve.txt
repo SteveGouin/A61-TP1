@@ -40,8 +40,15 @@ Objectif
 
 Partie 6
 --------
+Objectif 
 	- Ajout d'un module de log
-	- 
+
+Partie 7
+--------
+Objectif 
+	- Creation d'un package
+	- Ce package sera installable avec pip
+
 Objectif
 	-  
 
