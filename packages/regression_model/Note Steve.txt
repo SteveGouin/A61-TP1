@@ -47,7 +47,9 @@ Partie 7
 --------
 Objectif 
 	- Creation d'un package
-	- Ce package sera installable avec pip
+	- Ce package sera installable avec pip incluant tous les requis
+	- Ceci permettra d'importer notre librairie directement dans python
+
 
 Objectif
 	-  
