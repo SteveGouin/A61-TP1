@@ -50,9 +50,23 @@ Objectif
 	- Ce package sera installable avec pip incluant tous les requis
 	- Ceci permettra d'importer notre librairie directement dans python
 
-
+Partie 8
+--------
 Objectif
-	-  
+	- Configuration du Rest-API flask
+
+Probleme
+	- Installation des requirements de ml-api
+		ERROR: C:\Users\Dell\Desktop\cours-A61\cours-A61\packages\regression_model is not a valid editable requirement
+			- Il faut changer le path pour mon path local dans le nouveau fichier requirements.txt
+			 e "D:\_Intelligence Artificielle\10 - 420-A61-Préparation solution IA mise en plac\TP1\A61-TP1\packages\regression_model"
+			Cependant j'obtenais une erreur de path invalide j'ai donc changé la ligne pour installer le package de la facon suivant
+				regression_model>=0.0.0
+
+	- Execution de run.py
+		ERROR: ImportError: cannot import name 'Markup' from 'jinja2' 
+			- j'ai désinstaller Flask et jinja2 puis réinstallé ce qui a réglé le probleme
+
 
 	
 
