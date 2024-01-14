@@ -73,5 +73,10 @@ Partie 9
 Objectif
 	- Ajout config, log et test a Flask api
 
-	
+Partie 10
+---------
+Objectif
+	- Ajout partie prediction a Flask API
+
+	***** ATTENTION MODIF requirements.txt dans ml_api il ne faut pas écraser les modifs précédentes *****
 
