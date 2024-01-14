@@ -85,6 +85,7 @@ Partie 11
 Objectif
 	- Ajout de version a notre application flask
 
+Probleme
 	- Erreur obtenu lors du lancement des tests
 		(base38) D:\_Intelligence Artificielle\10 - 420-A61-Préparation solution IA mise en place\TP1\A61-TP1\packages\ml_api>python run.py
 		Error processing line 1 of C:\Users\Josee\.conda\envs\base38\lib\site-packages\distutils-precedence.pth:
@@ -99,3 +100,35 @@ Objectif
 		python.exe -m pip install -U pip setuptools
 		pip install -U pip setuptools
 
+Partie 12
+---------
+
+Objectif 
+	- ajout du schema de validation a flask
+
+Probleme
+	C:\Users\Josee\.conda\envs\base38\lib\site-packages\flask\__init__.py:19: in <module>
+	    from jinja2 import Markup, escape
+ 	    ImportError: cannot import name 'Markup' from 'jinja2' (C:\Users\Josee\.conda\envs\base38\lib\site-packages\jinja2\__init__.py)
+
+	- J'ai du reinstaller flask avec une version plus a jour
+		pip uninstall  Flask Jinja2
+		pip install Flask Jinja2
+
+	- Ceci a résolu l'erreur cependant 2 de mes tests fail soit ceux concernant les prédictions
+		ERREUR: ValueError: Invalid file path or buffer object type: <class 'list'>
+
+		SOURCES:
+			test_controller.py --> test_prediction_endpoint_returns_prediction()
+				** response = flask_test_client.post('/v1/predict/regression', json=json.loads(post_json))
+			test_validation.py --> test_prediction_endpoint_validation_200()
+				** response = flask_test_client.post('/v1/predict/regression', json=json.loads(post_json))
+
+	- Solution : j'ai du corriger le fichier predict.py dans regression_model
+		def make_prediction(*, input_data) -> dict:
+		    	"""Make a prediction using the saved model pipeline."""
+			data = pd.read_json(input_data)
+		est devenu
+		    data = pd.DataFrame(input_data)
+
+	- J'ai egalement du redéployer mon package comme mon fichier requirement.txt spécifie le package regression_model installé dans l'environnement
