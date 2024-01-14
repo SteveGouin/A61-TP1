@@ -78,5 +78,24 @@ Partie 10
 Objectif
 	- Ajout partie prediction a Flask API
 
-	***** ATTENTION MODIF requirements.txt dans ml_api il ne faut pas écraser les modifs précédentes *****
+	***** ATTENTION MODIF requirements.txt dans ml_api il ne faut pas écraser les modifs précédentes sur mon répertoire local*****
+
+Partie 11
+---------
+Objectif
+	- Ajout de version a notre application flask
+
+	- Erreur obtenu lors du lancement des tests
+		(base38) D:\_Intelligence Artificielle\10 - 420-A61-Préparation solution IA mise en place\TP1\A61-TP1\packages\ml_api>python run.py
+		Error processing line 1 of C:\Users\Josee\.conda\envs\base38\lib\site-packages\distutils-precedence.pth:
+
+	 	Traceback (most recent call last):
+		    File "C:\Users\Josee\.conda\envs\base38\lib\site.py", line 169, in addpackage
+		      exec(line)
+		    File "<string>", line 1, in <module>
+		  ModuleNotFoundError: No module named '_distutils_hack'
+
+	- Pour corriger l'erreur j'ai mis a jour le setup tools
+		python.exe -m pip install -U pip setuptools
+		pip install -U pip setuptools
 
